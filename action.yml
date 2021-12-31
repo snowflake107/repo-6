@@ -1,6 +1,18 @@
-name: "action name"
-description: "action description"
+name: "validate using JSON Schema"
+description: "validates a JSON/YAML document using provided JSON Schema"
+
+inputs:
+  schema:
+    description: 'JSON Schema path or URL'
+    required: true
+  target:
+    description: 'target JSON/YAML document path or URL, multiple documents can be provided, one per line'
+    required: true
+  strict:
+    description: 'should strict validation be enabled'
+    required: false
+    default: 'false'
 
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'dist/index.js'
