@@ -10,7 +10,7 @@
     "@actions/core": "^1.6.0"
   },
   "devDependencies": {
-    "@vercel/ncc": "^0.31.1",
+    "@vercel/ncc": "^0.33.1",
     "ajv": "^8.8.2",
     "ajv-formats": "^2.1.1",
     "eslint": "^7.32.0",
