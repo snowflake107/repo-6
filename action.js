@@ -20,11 +20,7 @@ function loadFile(location) {
         reject(error);
       });
     };
-    if (location.startsWith('http://')) {
-      http.get(location, httpCallback);
-    } else if (location.startsWith('https://')) {
-      https.get(location, httpCallback);
-    } else {
+    if (fs.existsSync(location)) {
       fs.readFile(location, 'utf8', (err, data) => {
         if (err) {
           reject(err);
@@ -32,6 +28,15 @@ function loadFile(location) {
           resolve(data);
         }
       });
+    } else {
+      let url = new URL(location);
+      if (url.protocol === 'http:') {
+        http.get(url, httpCallback);
+      } else if (url.protocol === 'https:') {
+        https.get(url, httpCallback);
+      } else {
+        reject(new Error('unsupported protocol'));
+      }
     }
   });
 }
