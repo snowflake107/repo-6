@@ -50,8 +50,11 @@ function loadData(path) {
   const rawData = fs.readFileSync(path, 'utf8');
   if (path.endsWith('.yaml') || path.endsWith('.yml')) {
     return yaml.load(rawData);
+  } else if (path.endsWith('.json')) {
+    return JSON.parse(rawData);
+  } else {
+    throw new Error('unsupported document type');
   }
-  return JSON.parse(rawData);
 }
 
 module.exports = async function action(schemaLocation, dataLocations, strict = false) {
