@@ -57,6 +57,11 @@ type GCPManagedControlPlaneSpec struct {
 	// This feature is disabled if this field is not specified.
 	// +optional
 	MasterAuthorizedNetworksConfig *MasterAuthorizedNetworksConfig `json:"master_authorized_networks_config,omitempty"`
+	// EnableWorkloadIdentity allows enabling workload identity during cluster creation when
+	// EnableAutopilot is disabled. It allows workloads in your GKE clusters to impersonate
+	// Identity and Access Management (IAM) service accounts to access Google Cloud services.
+	// Ref: https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity
+	EnableWorkloadIdentity bool `json:"enableWorkloadIdentity"`
 }
 
 // GCPManagedControlPlaneStatus defines the observed state of GCPManagedControlPlane.
