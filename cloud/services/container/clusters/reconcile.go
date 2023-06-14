@@ -377,13 +377,9 @@ func (s *Service) checkDiffAndPrepareUpdate(existingCluster *containerpb.Cluster
 		}
 	}
 	// Master version
-	if s.scope.GCPManagedControlPlane.Spec.ControlPlaneVersion != nil {
-		desiredMasterVersion := *s.scope.GCPManagedControlPlane.Spec.ControlPlaneVersion
-		if desiredMasterVersion != existingCluster.InitialClusterVersion {
-			needUpdate = true
-			clusterUpdate.DesiredMasterVersion = desiredMasterVersion
-			log.V(2).Info("Master version update required", "current", existingCluster.InitialClusterVersion, "desired", desiredMasterVersion)
-		}
+	if s.scope.GCPManagedControlPlane.Spec.ControlPlaneVersion != nil && *s.scope.GCPManagedControlPlane.Spec.ControlPlaneVersion != existingCluster.CurrentMasterVersion {
+		needUpdate = true
+		clusterUpdate.DesiredMasterVersion = *s.scope.GCPManagedControlPlane.Spec.ControlPlaneVersion
 	}
 
 	// DesiredMasterAuthorizedNetworksConfig
