@@ -815,6 +815,7 @@ func autoConvert_v1beta1_NetworkSpec_To_v1alpha3_NetworkSpec(in *v1beta1.Network
 		out.Subnets = nil
 	}
 	out.LoadBalancerBackendPort = (*int32)(unsafe.Pointer(in.LoadBalancerBackendPort))
+	// WARNING: in.DatapathProvider requires manual conversion: does not exist in peer-type
 	return nil
 }
 

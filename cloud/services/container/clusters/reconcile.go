@@ -262,10 +262,10 @@ func (s *Service) createCluster(ctx context.Context, log *logr.Logger) error {
 		ReleaseChannel: &containerpb.ReleaseChannel{
 			Channel: convertToSdkReleaseChannel(s.scope.GCPManagedControlPlane.Spec.ReleaseChannel),
 		},
-		WorkloadIdentityConfig: s.createWorkloadIdentityConfig(),
-		NetworkConfig:          s.createNetworkConfig(),
-		AddonsConfig:           s.createAddonsConfig(),
-		ResourceLabels:         s.scope.GCPManagedCluster.Labels,
+		WorkloadIdentityConfig:         s.createWorkloadIdentityConfig(),
+		NetworkConfig:                  s.createNetworkConfig(),
+		AddonsConfig:                   s.createAddonsConfig(),
+		ResourceLabels:                 s.scope.GCPManagedCluster.Labels,
 		MasterAuthorizedNetworksConfig: convertToSdkMasterAuthorizedNetworksConfig(s.scope.GCPManagedControlPlane.Spec.MasterAuthorizedNetworksConfig),
 	}
 
@@ -464,11 +464,13 @@ func (s *Service) checkDiffAndPrepareUpdate(existingCluster *containerpb.Cluster
 		log.V(4).Info("Master authorized networks config update check", "desired", desiredMasterAuthorizedNetworksConfig)
 	}
 
-	log.V(4).Info("Update cluster request. ", "needUpdate", needUpdate, "updateClusterRequest", &updateClusterRequest)
-	return needUpdate, &containerpb.UpdateClusterRequest{
+	updateClusterRequest := containerpb.UpdateClusterRequest{
 		Name:   s.scope.ClusterFullName(),
 		Update: &clusterUpdate,
 	}
+
+	log.V(4).Info("Update cluster request. ", "needUpdate", needUpdate, "updateClusterRequest", &updateClusterRequest)
+	return needUpdate, &updateClusterRequest
 }
 
 func (s *Service) hasDesiredVersion(controlPlaneVersion *string, clusterVersion string) bool {
