@@ -265,7 +265,7 @@ func (s *Service) createCluster(ctx context.Context, log *logr.Logger) error {
 		WorkloadIdentityConfig:         s.createWorkloadIdentityConfig(),
 		NetworkConfig:                  s.createNetworkConfig(),
 		AddonsConfig:                   s.createAddonsConfig(),
-		ResourceLabels:                 s.scope.GCPManagedCluster.Labels,
+		ResourceLabels:                 s.scope.GCPManagedCluster.Spec.AdditionalLabels,
 		MasterAuthorizedNetworksConfig: convertToSdkMasterAuthorizedNetworksConfig(s.scope.GCPManagedControlPlane.Spec.MasterAuthorizedNetworksConfig),
 	}
 
