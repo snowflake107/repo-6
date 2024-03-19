@@ -141,3 +141,8 @@ dist
 /coverage
 /coverage.json
 
+# build
+/flat
+
+# ide
+.vscode
