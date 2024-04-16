@@ -1,7 +1,7 @@
-#if __has_include("Quick-Swift.h")
-#import "Quick-Swift.h"
+#if __has_include("Quick7-Swift.h")
+#import "Quick7-Swift.h"
 #else
-#import <Quick/Quick-Swift.h>
+#import <Quick7/Quick7-Swift.h>
 #endif
 
 @interface AsyncSpec (testMethodSelectors)

@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name         = "Quick"
+  s.name         = "Quick7"
   s.version      = "7.5.0"
   s.summary      = "The Swift (and Objective-C) testing framework."
 
@@ -16,15 +16,15 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '13.0'
   s.visionos.deployment_target = '1.0'
 
-  s.source       = { :git => "https://github.com/Quick/Quick.git", :tag => "v#{s.version}" }
+  s.source       = { :git => "https://github.com/revolut-mobile/Quick.git", :tag => "v#{s.version}" }
   s.source_files = "Sources/**/*.{swift,h,m}"
 
-  s.header_dir = "Quick"
+  s.header_dir = "Quick7"
 
   s.public_header_files = [
     'Sources/QuickObjectiveC/Configuration/QuickConfiguration.h',
     'Sources/QuickObjectiveC/DSL/QCKDSL.h',
-    'Sources/QuickObjectiveC/Quick.h',
+    'Sources/QuickObjectiveC/Quick7.h',
     'Sources/QuickObjectiveC/QuickSpec.h',
   ]
 

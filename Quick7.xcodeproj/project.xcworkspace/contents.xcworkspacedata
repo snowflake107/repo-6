@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Quick.xcodeproj">
+      location = "self:/Users/timofei.karpov/Developer/Quick/Quick7.xcodeproj">
    </FileRef>
 </Workspace>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAEB6B8D1943873100289F44"
-               BuildableName = "Quick.framework"
-               BlueprintName = "Quick"
-               ReferencedContainer = "container:Quick.xcodeproj">
+               BuildableName = "Quick7.framework"
+               BlueprintName = "Quick7"
+               ReferencedContainer = "container:Quick7.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -31,7 +31,7 @@
                BlueprintIdentifier = "732D8D691E516780008558BD"
                BuildableName = "SwiftLint"
                BlueprintName = "SwiftLint"
-               ReferencedContainer = "container:Quick.xcodeproj">
+               ReferencedContainer = "container:Quick7.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DAEB6B8D1943873100289F44"
-            BuildableName = "Quick.framework"
-            BlueprintName = "Quick"
-            ReferencedContainer = "container:Quick.xcodeproj">
+            BuildableName = "Quick7.framework"
+            BlueprintName = "Quick7"
+            ReferencedContainer = "container:Quick7.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <Testables>
@@ -56,9 +56,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DAEB6B981943873100289F44"
-               BuildableName = "Quick - Tests.xctest"
-               BlueprintName = "Quick - Tests"
-               ReferencedContainer = "container:Quick.xcodeproj">
+               BuildableName = "Quick7 - Tests.xctest"
+               BlueprintName = "Quick7 - Tests"
+               ReferencedContainer = "container:Quick7.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -66,9 +66,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DA5663E71A4C8D8500193C88"
-               BuildableName = "QuickFocused - Tests.xctest"
-               BlueprintName = "QuickFocused - Tests"
-               ReferencedContainer = "container:Quick.xcodeproj">
+               BuildableName = "Quick7Focused - Tests.xctest"
+               BlueprintName = "Quick7Focused - Tests"
+               ReferencedContainer = "container:Quick7.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -77,9 +77,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "64076CE51D6D7C2000E2B499"
-               BuildableName = "QuickAfterSuite - Tests.xctest"
-               BlueprintName = "QuickAfterSuite - Tests"
-               ReferencedContainer = "container:Quick.xcodeproj">
+               BuildableName = "Quick7AfterSuite - Tests.xctest"
+               BlueprintName = "Quick7AfterSuite - Tests"
+               ReferencedContainer = "container:Quick7.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -87,9 +87,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CD89D14C247A673100C1F086"
-               BuildableName = "QuickIssue853RegressionTests.xctest"
-               BlueprintName = "QuickIssue853RegressionTests"
-               ReferencedContainer = "container:Quick.xcodeproj">
+               BuildableName = "Quick7Issue853RegressionTests.xctest"
+               BlueprintName = "Quick7Issue853RegressionTests"
+               ReferencedContainer = "container:Quick7.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -108,9 +108,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DAEB6B8D1943873100289F44"
-            BuildableName = "Quick.framework"
-            BlueprintName = "Quick"
-            ReferencedContainer = "container:Quick.xcodeproj">
+            BuildableName = "Quick7.framework"
+            BlueprintName = "Quick7"
+            ReferencedContainer = "container:Quick7.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </LaunchAction>
@@ -124,9 +124,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DAEB6B8D1943873100289F44"
-            BuildableName = "Quick.framework"
-            BlueprintName = "Quick"
-            ReferencedContainer = "container:Quick.xcodeproj">
+            BuildableName = "Quick7.framework"
+            BlueprintName = "Quick7"
+            ReferencedContainer = "container:Quick7.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
