@@ -1,5 +1,7 @@
 # hedera-accelerator-defi-eip
 
+smart contracts for accelerator-defi-EIP
+
 ## Support
 
 If you have a question on how to use the product, please see our [support guide](https://github.com/hashgraph/.github/blob/main/SUPPORT.md).
