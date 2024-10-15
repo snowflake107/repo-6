@@ -286,7 +286,7 @@ jobs:
         SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       if: ${{ env.CHANNEL != 'null' }}
       name: Send Slack notification
-      uses: slackapi/slack-github-action@v1.23.0
+      uses: slackapi/slack-github-action@v1.27.0
       with:
         payload: "{\n  \"icon_emoji\": \":grafana:\",\n  \"username\": \"Grafana issue\
           \ labeled\",\n  \"text\": \"Issue \\\"${{ steps.preparePayload.outputs.replaced\
