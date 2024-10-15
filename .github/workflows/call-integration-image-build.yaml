@@ -274,7 +274,7 @@ jobs:
           '
     - continue-on-error: true
       name: Build the AMD64 image
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         context: .
         file: ./dockerfiles/Dockerfile
@@ -296,7 +296,7 @@ jobs:
           '
     - continue-on-error: true
       name: Build the AMD64 debug image
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         context: .
         file: ./dockerfiles/Dockerfile

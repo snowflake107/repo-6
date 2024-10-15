@@ -288,7 +288,7 @@ jobs:
     - continue-on-error: true
       id: build_push
       name: Build the production images
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         build-args: 'FLB_NIGHTLY_BUILD=${{ inputs.unstable }}
 
@@ -319,7 +319,7 @@ jobs:
     - continue-on-error: true
       id: debug_build_push
       name: Build the debug multi-arch images
-      uses: docker/build-push-action@v5
+      uses: docker/build-push-action@v6
       with:
         build-args: 'FLB_NIGHTLY_BUILD=${{ inputs.unstable }}
 
