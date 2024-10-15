@@ -266,7 +266,7 @@ jobs:
     - continue-on-error: true
       if: ${{ env.BOARD != 'null' }}
       name: Add to GitHub board
-      uses: leonsteinhaeuser/project-beta-automations@v2.1.0
+      uses: leonsteinhaeuser/project-beta-automations@v2.2.1
       with:
         gh_token: ${{ secrets.GITHUB_TOKEN }}
         organization: grafana
