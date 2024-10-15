@@ -253,7 +253,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_asan
         path: /home/runner/.cache/bazel
@@ -524,7 +524,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_noexcept
         path: /home/runner/.cache/bazel
@@ -795,7 +795,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_nortti
         path: /home/runner/.cache/bazel
@@ -1066,7 +1066,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_test
         path: /home/runner/.cache/bazel
@@ -1337,7 +1337,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_tsan
         path: /home/runner/.cache/bazel
@@ -1608,7 +1608,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_valgrind
         path: /home/runner/.cache/bazel
@@ -1879,7 +1879,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_test
         path: /home/runner/.cache/bazel
@@ -2150,7 +2150,7 @@ jobs:
       env:
         cache-name: bazel_cache
       name: Mount Bazel Cache
-      uses: actions/cache@v3
+      uses: actions/cache@v4
       with:
         key: bazel_benchmark
         path: /home/runner/.cache/bazel
