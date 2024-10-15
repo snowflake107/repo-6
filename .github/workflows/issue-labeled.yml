@@ -275,7 +275,7 @@ jobs:
     - continue-on-error: true
       id: preparePayload
       name: Prepare payload
-      uses: frabert/replace-string-action@v2.0
+      uses: frabert/replace-string-action@v2.5
       with:
         flags: g
         pattern: '"'
