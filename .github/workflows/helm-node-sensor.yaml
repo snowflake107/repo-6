@@ -263,7 +263,7 @@ jobs:
       with:
         version: v3.8.1
     - continue-on-error: true
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         check-latest: true
         python-version: '3.9'
