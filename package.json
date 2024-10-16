@@ -42,7 +42,7 @@
     "babel-register": "^6.26.0",
     "chai": "^4.3.4",
     "deep-equal": "^2.0.5",
-    "mocha": "^9.0.0",
+    "mocha": "^10.7.3",
     "nock": "^13.1.1",
     "nyc": "^15.1.0",
     "typescript": "^4.9.4"
