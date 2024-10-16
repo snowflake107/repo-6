@@ -246,7 +246,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       if: contains(github.event.issue.milestone.title, 'v1.0')
-      uses: alex-page/github-project-automation-plus@v0.6.0
+      uses: alex-page/github-project-automation-plus@v0.9.0
       with:
         column: To Do
         project: Kanban
