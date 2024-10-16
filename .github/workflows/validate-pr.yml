@@ -252,7 +252,7 @@ jobs:
       with:
         node-version: '12'
     - continue-on-error: true
-      uses: actions/cache@v2.1.5
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
         path: ~/.npm
@@ -519,7 +519,7 @@ jobs:
       with:
         node-version: '12'
     - continue-on-error: true
-      uses: actions/cache@v2.1.5
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
         path: ~/.npm
@@ -786,7 +786,7 @@ jobs:
       with:
         node-version: '12'
     - continue-on-error: true
-      uses: actions/cache@v2.1.5
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
         path: ~/.npm
@@ -1052,7 +1052,7 @@ jobs:
       with:
         node-version: '12'
     - continue-on-error: true
-      uses: actions/cache@v2.1.5
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
         path: ~/.npm
@@ -1317,7 +1317,7 @@ jobs:
       with:
         node-version: '12'
     - continue-on-error: true
-      uses: actions/cache@v2.1.5
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
         path: ~/.npm
@@ -1584,7 +1584,7 @@ jobs:
       with:
         node-version: '12'
     - continue-on-error: true
-      uses: actions/cache@v2.1.5
+      uses: actions/cache@v4.1.1
       with:
         key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
         path: ~/.npm
