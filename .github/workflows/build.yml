@@ -259,7 +259,7 @@ jobs:
     - continue-on-error: true
       if: github.event_name == 'pull_request'
       name: Run GoReleaser build
-      uses: goreleaser/goreleaser-action@v2.9.1
+      uses: goreleaser/goreleaser-action@v6.0.0
       with:
         args: build --snapshot --rm-dist
     - continue-on-error: true
@@ -267,7 +267,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       if: github.event_name == 'release'
       name: Run GoReleaser release
-      uses: goreleaser/goreleaser-action@v2.9.1
+      uses: goreleaser/goreleaser-action@v6.0.0
       with:
         args: release --rm-dist
     - name: after
