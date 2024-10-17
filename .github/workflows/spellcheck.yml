@@ -247,7 +247,7 @@ jobs:
     - continue-on-error: true
       uses: actions/checkout@v3
     - continue-on-error: true
-      uses: streetsidesoftware/cspell-action@v2
+      uses: streetsidesoftware/cspell-action@v6
       with:
         incremental_files_only: true
         inline: warning
