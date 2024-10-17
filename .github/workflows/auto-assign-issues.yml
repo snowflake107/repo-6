@@ -246,7 +246,7 @@ jobs:
         sudo sh -c ''echo 1 > /proc/sys/net/ipv4/ip_forward'''
     - continue-on-error: true
       name: Auto-assign issue
-      uses: pozil/auto-assign-issue@v1.11.0
+      uses: pozil/auto-assign-issue@v2.0.0
       with:
         assignees: phantsure,tiwarishub,anuragc617,vsvipul,bishal-pdmsft
         numOfAssignee: 1
